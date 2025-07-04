@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS books (
 
 # Function to fetch and insert books into MySQL
 def get_and_store_books(query, max_results=39):
-    api_key = 'AIzaSyDn8K9RO4OgmFbjINon5Pk67pglsP610VE'
+    api_key = 'ABC'
     url = f'https://www.googleapis.com/books/v1/volumes?q={query}&maxResults={max_results}&key={api_key}'
 
     response = requests.get(url)
